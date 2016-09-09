@@ -1,0 +1,18 @@
+<div id="todo_item" class="row">
+  <div class="col-md-1">
+    <div class="checkbox">
+        <label>
+          <input type="checkbox" <%= doit ? 'checked' : '' %> id="doit" value="">
+        </label>
+      </div>
+  </div>
+  <div class="col-md-11">
+    <span id="todo_desc" class="<%= doit ? 'doit' : '' %>"><%= todo %></span>
+  </div>
+</div>
+
+<style media="screen">
+  .doit {
+    color: #D3D3D3;
+  }
+</style>

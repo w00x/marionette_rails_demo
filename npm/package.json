@@ -1,0 +1,24 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "browserify main.js -o ../public/build.js -t [ babelify --presets [ es2015 ] ] -t [ stringify --extensions [.html] ]"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "backbone.marionette": "^3.0.0",
+    "backbone.radio": "^2.0.0",
+    "jquery": "^3.1.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "browserify-compile-templates": "^0.3.0",
+    "stringify": "^5.1.0"
+  }
+}
